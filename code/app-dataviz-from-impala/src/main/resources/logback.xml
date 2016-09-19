@@ -1,0 +1,8 @@
+<configuration>
+
+    <jmxConfigurator/>
+
+    <property name="LOG_PATH" value="./logs"/>
+    <property name="LOG_FILE" value="${LOG_PATH}/projectdemo.log"/>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+</configuration>
