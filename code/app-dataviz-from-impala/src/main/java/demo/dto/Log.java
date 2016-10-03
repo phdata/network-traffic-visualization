@@ -13,6 +13,6 @@ public class Log {
     private String srcaddr_s;
     private String dstaddr_s;
     private String uptime;
-    private String timestamp_1;
+    private String packet_timestamp;
 
 }

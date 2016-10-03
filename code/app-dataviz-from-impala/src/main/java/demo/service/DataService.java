@@ -15,9 +15,9 @@ public class DataService {
     @Autowired
     private MyBatisMapper myBatisMapper;
 
-    public List<Log> getTemperatureByDeviceId(String limit) {
+    public List<Log> getDataBytimestamp(String timestamp) {
 
-        return myBatisMapper.select(limit);
+        return myBatisMapper.select(timestamp);
     }
 
 

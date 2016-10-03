@@ -5,7 +5,7 @@ var dstChart = dc.rowChart("#dc-magnitude-chart","viz");
 
 
 
-            d3.json("http://localhost:1990/api/v1/log/10000000", function (data) {
+            d3.json("http://localhost:1990/api/v1/log/2015-05-01", function (data) {
                 // format the data a bit
                 var numberFormat = d3.format(",f");
                 var dateformat=d3.time.format("dd.mm.yyyy hh:MM:ss").parse;            

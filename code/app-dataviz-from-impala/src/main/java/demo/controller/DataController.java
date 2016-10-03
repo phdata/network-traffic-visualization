@@ -30,13 +30,13 @@ public class DataController {
     @Autowired
     private DataService dataService;
 
-    @RequestMapping(value = "/log/{limit}", method = GET)
+    @RequestMapping(value = "/log/{timestamp}", method = GET)
  
-    public String getTemperatureDevice(@PathVariable("limit") String limit) {
+    public String getData(@PathVariable("timestamp") String timestamp) {
        // log.debug("/temperature/"+deviceid);
-    	System.out.println("/log/---"+dataService.getTemperatureByDeviceId(limit).get(0));
+    	System.out.println("/log/---"+dataService.getDataBytimestamp(timestamp).get(0));
     	
-        return  gson.toJson(dataService.getTemperatureByDeviceId(limit));
+        return  gson.toJson(dataService.getDataBytimestamp(timestamp));
     }
 
     @RequestMapping(value = "/temperature/{clientip}/fake", method = GET)
